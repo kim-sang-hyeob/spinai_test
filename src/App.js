@@ -70,7 +70,7 @@ function App() {
       console.error('Error details:', error);
       // API 키 관련 에러인 경우 더 명확한 메시지 표시
       if (error.message.includes('API key')) {
-        alert('OpenAI API 키가 설정되지 않았습니다. .env 파일을 확인해주세��.');
+        alert('OpenAI API 키가 설정되지 않았습니다. .env 파일을 확인해주세요.');
       }
       const firstLine = content.split('\n')[0];
       return firstLine.slice(0, 50) + (firstLine.length > 50 ? '...' : '');
@@ -165,7 +165,7 @@ function App() {
             ...currentMemo,
             content: e.target.value
           })}
-          placeholder="메모를 입력하���요..."
+          placeholder="메모를 입력하세요..."
         />
         <button className="save-button" onClick={saveMemo}>
           {currentMemo.id ? '수정하기' : '저장하기'}
